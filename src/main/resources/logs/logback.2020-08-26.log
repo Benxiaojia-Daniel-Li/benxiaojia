@@ -1,0 +1,148 @@
+11:20:04.999 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - Starting UmsAdminControllerTest on LAPTOP-TIO7QC4D with PID 28708 (started by 86159 in E:\benxiaojia)
+11:20:05.002 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - No active profile set, falling back to default profiles: default
+11:20:07.052 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11:20:07.057 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:20:07.116 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+11:20:08.024 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@595ec862' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:20:08.039 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:20:08.632 logback [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+11:20:09.604 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11:20:11.705 logback [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+11:20:12.312 logback [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7804a783, org.springframework.security.web.context.SecurityContextPersistenceFilter@4bc9389, org.springframework.security.web.header.HeaderWriterFilter@27107a97, org.springframework.security.web.authentication.logout.LogoutFilter@2823b7c5, com.awesome.benxiaojia.component.JwtAuthenticationTokenFilter@54ec8ab3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@662061e3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2087c939, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71b32407, org.springframework.security.web.session.SessionManagementFilter@3140ad41, org.springframework.security.web.access.ExceptionTranslationFilter@5655278d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@359a2c96]
+11:20:12.397 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:20:12.884 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:20:13.499 logback [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 6.3.3 by Redgate
+11:20:13.564 logback [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/benxiaojia (MySQL 5.7)
+11:20:13.875 logback [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:00.269s)
+11:20:13.884 logback [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `benxiaojia`: 1.6
+11:20:13.884 logback [main] INFO  o.f.core.internal.command.DbMigrate - Schema `benxiaojia` is up to date. No migration necessary.
+11:20:14.288 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:20:14.323 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:20:14.369 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:20:14.628 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - Started UmsAdminControllerTest in 10.322 seconds (JVM running for 13.848)
+11:20:15.359 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - $2a$10$t..YsCBCLRPORjM98cgvWua5iEC4mz3.eEjqQIMF8YHuHmTiWLVta
+11:20:15.386 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:20:15.420 logback [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+11:24:14.686 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - Starting UmsAdminControllerTest on LAPTOP-TIO7QC4D with PID 13120 (started by 86159 in E:\benxiaojia)
+11:24:14.691 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - No active profile set, falling back to default profiles: default
+11:24:17.275 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11:24:17.282 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:24:17.337 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 Redis repository interfaces.
+11:24:18.392 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4be12f6c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:24:18.418 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:24:19.159 logback [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+11:24:20.059 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11:24:22.451 logback [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+11:24:23.103 logback [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7135e8cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a5a4f8, org.springframework.security.web.header.HeaderWriterFilter@4b62f1ba, org.springframework.security.web.authentication.logout.LogoutFilter@7f9dbe11, com.awesome.benxiaojia.component.JwtAuthenticationTokenFilter@3efb863c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@174f0d06, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2987b699, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5527dbb0, org.springframework.security.web.session.SessionManagementFilter@1a390b8c, org.springframework.security.web.access.ExceptionTranslationFilter@4902c584, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5357de0e]
+11:24:23.218 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:24:23.855 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:24:24.547 logback [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 6.3.3 by Redgate
+11:24:24.614 logback [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/benxiaojia (MySQL 5.7)
+11:24:24.875 logback [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:00.232s)
+11:24:24.888 logback [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `benxiaojia`: 1.6
+11:24:24.889 logback [main] INFO  o.f.core.internal.command.DbMigrate - Schema `benxiaojia` is up to date. No migration necessary.
+11:24:25.391 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:24:25.439 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:24:25.508 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:24:25.864 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - Started UmsAdminControllerTest in 12.111 seconds (JVM running for 15.909)
+11:24:26.788 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:24:26.841 logback [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+11:28:31.719 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - Starting UmsAdminControllerTest on LAPTOP-TIO7QC4D with PID 27912 (started by 86159 in E:\benxiaojia)
+11:28:31.721 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - No active profile set, falling back to default profiles: default
+11:28:33.386 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11:28:33.391 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:28:33.437 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+11:28:34.154 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@266da047' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:28:34.168 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:28:34.625 logback [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+11:28:35.328 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11:28:37.053 logback [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+11:28:37.534 logback [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@320efff5, org.springframework.security.web.context.SecurityContextPersistenceFilter@17ea3bc0, org.springframework.security.web.header.HeaderWriterFilter@66e62fc4, org.springframework.security.web.authentication.logout.LogoutFilter@603faaad, com.awesome.benxiaojia.component.JwtAuthenticationTokenFilter@78b44fcb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c36ab22, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b386a17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12dc702b, org.springframework.security.web.session.SessionManagementFilter@1e18876d, org.springframework.security.web.access.ExceptionTranslationFilter@30adae45, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e777b0]
+11:28:37.630 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:28:38.068 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:28:38.599 logback [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 6.3.3 by Redgate
+11:28:38.650 logback [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/benxiaojia (MySQL 5.7)
+11:28:38.893 logback [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:00.214s)
+11:28:38.902 logback [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `benxiaojia`: 1.6
+11:28:38.902 logback [main] INFO  o.f.core.internal.command.DbMigrate - Schema `benxiaojia` is up to date. No migration necessary.
+11:28:39.224 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:28:39.247 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:28:39.289 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:28:39.519 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - Started UmsAdminControllerTest in 8.302 seconds (JVM running for 11.134)
+11:28:39.842 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - $2a$10$fze8IIHGRg1knWllm5s9.uB4DbEwgS//Fovuf0qm5twosWxen2n0q
+11:28:39.872 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:28:39.908 logback [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+11:43:13.197 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - Starting UmsAdminControllerTest on LAPTOP-TIO7QC4D with PID 29624 (started by 86159 in E:\benxiaojia)
+11:43:13.198 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - No active profile set, falling back to default profiles: default
+11:43:14.911 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11:43:14.914 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:43:14.959 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+11:43:15.746 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5b3518e1' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:43:15.762 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:43:16.255 logback [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+11:43:17.000 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11:43:18.698 logback [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+11:43:19.179 logback [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33bd9ac3, org.springframework.security.web.context.SecurityContextPersistenceFilter@5daa621b, org.springframework.security.web.header.HeaderWriterFilter@6292c63e, org.springframework.security.web.authentication.logout.LogoutFilter@bd703bb, com.awesome.benxiaojia.component.JwtAuthenticationTokenFilter@7c857e8f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fcedf83, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d758472, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42028589, org.springframework.security.web.session.SessionManagementFilter@198c0f1c, org.springframework.security.web.access.ExceptionTranslationFilter@3095d06b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ec23ec3]
+11:43:19.262 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:43:19.687 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:43:20.164 logback [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 6.3.3 by Redgate
+11:43:20.210 logback [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/benxiaojia (MySQL 5.7)
+11:43:20.432 logback [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:00.192s)
+11:43:20.441 logback [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `benxiaojia`: 1.6
+11:43:20.441 logback [main] INFO  o.f.core.internal.command.DbMigrate - Schema `benxiaojia` is up to date. No migration necessary.
+11:43:20.742 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:43:20.766 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:43:20.805 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:43:21.027 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - Started UmsAdminControllerTest in 8.359 seconds (JVM running for 11.33)
+11:43:21.650 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - $2a$10$wQmQPVkKIdcZKnr4xOXuoOgs6CH3UBKl8ZisJrx/rjH/xPO2bmZkm
+11:43:21.683 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:43:21.718 logback [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+11:44:09.284 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - Starting UmsAdminControllerTest on LAPTOP-TIO7QC4D with PID 20200 (started by 86159 in E:\benxiaojia)
+11:44:09.285 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - No active profile set, falling back to default profiles: default
+11:44:10.901 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11:44:10.905 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:44:10.951 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+11:44:11.655 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@45e11627' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:44:11.673 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:44:12.242 logback [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+11:44:12.958 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11:44:14.902 logback [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+11:44:15.383 logback [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c4516ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d2950ed, org.springframework.security.web.header.HeaderWriterFilter@e88e14, org.springframework.security.web.authentication.logout.LogoutFilter@6e1d9b32, com.awesome.benxiaojia.component.JwtAuthenticationTokenFilter@17ea3bc0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51aaa9d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51c4992e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d93e5bf, org.springframework.security.web.session.SessionManagementFilter@4d4600fb, org.springframework.security.web.access.ExceptionTranslationFilter@4860627a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e28f150]
+11:44:15.466 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:44:15.927 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:44:16.427 logback [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 6.3.3 by Redgate
+11:44:16.479 logback [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/benxiaojia (MySQL 5.7)
+11:44:16.688 logback [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:00.178s)
+11:44:16.695 logback [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `benxiaojia`: 1.6
+11:44:16.695 logback [main] INFO  o.f.core.internal.command.DbMigrate - Schema `benxiaojia` is up to date. No migration necessary.
+11:44:17.045 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:44:17.082 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:44:17.129 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:44:17.393 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - Started UmsAdminControllerTest in 8.648 seconds (JVM running for 11.679)
+11:44:18.049 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - $2a$10$uNX8ehIGZzNqR0Zts1zbyOII9YztHm36EVyKfjQrzj0N54QHWvxwe
+11:44:18.071 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:44:18.102 logback [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+11:52:40.513 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - Starting UmsAdminControllerTest on LAPTOP-TIO7QC4D with PID 13388 (started by 86159 in E:\benxiaojia)
+11:52:40.515 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - No active profile set, falling back to default profiles: default
+11:52:42.165 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11:52:42.168 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:52:42.208 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+11:52:42.955 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1584c019' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:52:42.972 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:52:43.441 logback [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+11:52:44.176 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11:52:45.912 logback [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+11:52:46.385 logback [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@244268a8, org.springframework.security.web.context.SecurityContextPersistenceFilter@28ceb25e, org.springframework.security.web.header.HeaderWriterFilter@226e95e9, org.springframework.security.web.authentication.logout.LogoutFilter@60ba6631, com.awesome.benxiaojia.component.JwtAuthenticationTokenFilter@563ab6d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@518a7b8a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60d32006, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@548f4f60, org.springframework.security.web.session.SessionManagementFilter@43a8bd35, org.springframework.security.web.access.ExceptionTranslationFilter@4bc41565, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33563147]
+11:52:46.467 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:52:46.863 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:52:47.384 logback [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 6.3.3 by Redgate
+11:52:47.433 logback [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/benxiaojia (MySQL 5.7)
+11:52:47.637 logback [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:00.174s)
+11:52:47.644 logback [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `benxiaojia`: 1.6
+11:52:47.645 logback [main] INFO  o.f.core.internal.command.DbMigrate - Schema `benxiaojia` is up to date. No migration necessary.
+11:52:47.967 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:52:48.002 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:52:48.056 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:52:48.295 logback [main] INFO  c.a.b.c.api.UmsAdminControllerTest - Started UmsAdminControllerTest in 8.316 seconds (JVM running for 10.962)
+11:52:48.909 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:52:48.955 logback [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

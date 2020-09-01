@@ -1,0 +1,141 @@
+14:58:09.102 logback [main] INFO  c.a.benxiaojia.BenxiaojiaApplication - Starting BenxiaojiaApplication on LAPTOP-TIO7QC4D with PID 27768 (E:\benxiaojia\target\classes started by 86159 in E:\benxiaojia)
+14:58:09.103 logback [main] INFO  c.a.benxiaojia.BenxiaojiaApplication - No active profile set, falling back to default profiles: default
+14:58:09.157 logback [main] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:58:09.157 logback [main] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:58:10.395 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:58:10.398 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:58:10.440 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+14:58:10.823 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6403a4a5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:58:10.827 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:58:11.325 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8433 (http)
+14:58:11.336 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8433"]
+14:58:11.337 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:58:11.337 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+14:58:11.443 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:58:11.443 logback [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2286 ms
+14:58:11.700 logback [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+14:58:12.166 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+14:58:13.185 logback [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+14:58:13.384 logback [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@681b42d3, org.springframework.security.web.context.SecurityContextPersistenceFilter@57eed461, org.springframework.security.web.header.HeaderWriterFilter@5383bf08, org.springframework.security.web.authentication.logout.LogoutFilter@58b03029, com.awesome.benxiaojia.component.JwtAuthenticationTokenFilter@772f3a3f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f08f8a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50c2ef56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77f7352a, org.springframework.security.web.session.SessionManagementFilter@621a387f, org.springframework.security.web.access.ExceptionTranslationFilter@5f803481, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1987807b]
+14:58:13.414 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+14:58:13.559 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:58:13.581 logback [main] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:58:13.788 logback [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 6.3.3 by Redgate
+14:58:13.808 logback [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/benxiaojia (MySQL 5.7)
+14:58:13.880 logback [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:00.051s)
+14:58:13.885 logback [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `benxiaojia`: 1.6
+14:58:13.886 logback [main] INFO  o.f.core.internal.command.DbMigrate - Schema `benxiaojia` is up to date. No migration necessary.
+14:58:14.049 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8433"]
+14:58:14.076 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8433 (http) with context path ''
+14:58:14.077 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+14:58:14.093 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+14:58:14.123 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+14:58:14.281 logback [main] INFO  c.a.benxiaojia.BenxiaojiaApplication - Started BenxiaojiaApplication in 6.036 seconds (JVM running for 11.793)
+14:58:24.205 logback [http-nio-8433-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:58:24.205 logback [http-nio-8433-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:58:24.213 logback [http-nio-8433-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+14:58:24.302 logback [http-nio-8433-exec-1] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.388 logback [http-nio-8433-exec-1] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.715 logback [http-nio-8433-exec-3] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.715 logback [http-nio-8433-exec-6] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.715 logback [http-nio-8433-exec-7] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.715 logback [http-nio-8433-exec-2] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.729 logback [http-nio-8433-exec-7] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.729 logback [http-nio-8433-exec-6] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.729 logback [http-nio-8433-exec-2] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.731 logback [http-nio-8433-exec-3] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.739 logback [http-nio-8433-exec-9] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.739 logback [http-nio-8433-exec-4] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.747 logback [http-nio-8433-exec-4] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.748 logback [http-nio-8433-exec-9] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.811 logback [http-nio-8433-exec-8] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.811 logback [http-nio-8433-exec-5] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.820 logback [http-nio-8433-exec-10] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.821 logback [http-nio-8433-exec-5] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.821 logback [http-nio-8433-exec-8] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.827 logback [http-nio-8433-exec-10] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.896 logback [http-nio-8433-exec-1] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.899 logback [http-nio-8433-exec-1] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.929 logback [http-nio-8433-exec-6] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.929 logback [http-nio-8433-exec-7] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.933 logback [http-nio-8433-exec-7] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.933 logback [http-nio-8433-exec-6] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.955 logback [http-nio-8433-exec-9] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.960 logback [http-nio-8433-exec-9] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:24.978 logback [http-nio-8433-exec-3] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:24.982 logback [http-nio-8433-exec-3] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:25.013 logback [http-nio-8433-exec-2] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:25.019 logback [http-nio-8433-exec-2] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:25.048 logback [http-nio-8433-exec-4] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:25.048 logback [http-nio-8433-exec-5] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:25.051 logback [http-nio-8433-exec-4] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:25.051 logback [http-nio-8433-exec-5] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:25.073 logback [http-nio-8433-exec-8] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:25.082 logback [http-nio-8433-exec-8] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:25.101 logback [http-nio-8433-exec-10] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:25.105 logback [http-nio-8433-exec-10] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:25.120 logback [http-nio-8433-exec-1] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:25.124 logback [http-nio-8433-exec-1] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:25.143 logback [http-nio-8433-exec-6] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:25.147 logback [http-nio-8433-exec-6] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:25.177 logback [http-nio-8433-exec-7] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:25.182 logback [http-nio-8433-exec-7] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:41.289 logback [http-nio-8433-exec-9] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:41.292 logback [http-nio-8433-exec-9] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.629 logback [http-nio-8433-exec-3] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.634 logback [http-nio-8433-exec-3] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.659 logback [http-nio-8433-exec-2] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.659 logback [http-nio-8433-exec-5] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.661 logback [http-nio-8433-exec-4] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.664 logback [http-nio-8433-exec-5] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.664 logback [http-nio-8433-exec-2] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.667 logback [http-nio-8433-exec-4] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.684 logback [http-nio-8433-exec-10] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.684 logback [http-nio-8433-exec-7] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.684 logback [http-nio-8433-exec-1] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.684 logback [http-nio-8433-exec-8] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.684 logback [http-nio-8433-exec-6] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.684 logback [http-nio-8433-exec-9] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.688 logback [http-nio-8433-exec-8] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.688 logback [http-nio-8433-exec-7] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.688 logback [http-nio-8433-exec-1] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.689 logback [http-nio-8433-exec-6] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.689 logback [http-nio-8433-exec-9] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.692 logback [http-nio-8433-exec-10] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.701 logback [http-nio-8433-exec-9] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.701 logback [http-nio-8433-exec-5] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.701 logback [http-nio-8433-exec-4] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.701 logback [http-nio-8433-exec-2] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.701 logback [http-nio-8433-exec-1] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.706 logback [http-nio-8433-exec-10] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.709 logback [http-nio-8433-exec-2] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.709 logback [http-nio-8433-exec-1] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.709 logback [http-nio-8433-exec-5] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.709 logback [http-nio-8433-exec-9] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.710 logback [http-nio-8433-exec-4] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.710 logback [http-nio-8433-exec-10] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.718 logback [http-nio-8433-exec-8] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.718 logback [http-nio-8433-exec-6] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.719 logback [http-nio-8433-exec-7] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.724 logback [http-nio-8433-exec-6] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.724 logback [http-nio-8433-exec-8] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.725 logback [http-nio-8433-exec-7] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.746 logback [http-nio-8433-exec-3] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.746 logback [http-nio-8433-exec-2] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.749 logback [http-nio-8433-exec-3] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.749 logback [http-nio-8433-exec-2] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.791 logback [http-nio-8433-exec-1] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.798 logback [http-nio-8433-exec-1] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.804 logback [http-nio-8433-exec-5] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.813 logback [http-nio-8433-exec-5] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.947 logback [http-nio-8433-exec-9] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.950 logback [http-nio-8433-exec-9] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:49.966 logback [http-nio-8433-exec-10] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:49.968 logback [http-nio-8433-exec-10] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:58:50.291 logback [http-nio-8433-exec-4] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:58:50.294 logback [http-nio-8433-exec-4] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:59:01.918 logback [http-nio-8433-exec-6] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:59:01.921 logback [http-nio-8433-exec-6] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:59:28.991 logback [http-nio-8433-exec-7] INFO  c.a.b.c.JwtAuthenticationTokenFilter - checking username:admin
+14:59:28.993 logback [http-nio-8433-exec-7] INFO  c.a.b.c.JwtAuthenticationTokenFilter - authenticated user:admin
+14:59:29.102 logback [http-nio-8433-exec-7] WARN  c.a.b.s.impl.UmsAdminServiceImpl - 登录异常:密码不正确
