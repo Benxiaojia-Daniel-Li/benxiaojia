@@ -37,23 +37,6 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
                                     FilterChain chain) throws ServletException, IOException {
-//        String authHeader = request.getHeader(this.tokenHeader);
-//        if (authHeader != null && authHeader.startsWith(this.tokenHead)) {
-//            // The part after "Bearer "
-//            String authToken = authHeader.substring(this.tokenHead.length());
-//            String username = jwtTokenUtil.getUserNameFromToken(authToken);
-//            LOGGER.info("checking username:{}", username);
-//            if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
-//                UserDetails userDetails = this.userDetailsService.loadUserByUsername(username);
-//                if (jwtTokenUtil.validateToken(authToken, userDetails)) {
-//                    UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(
-//                            userDetails, null, userDetails.getAuthorities());
-//                    authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
-//                    LOGGER.info("authenticated user:{}", username);
-//                    SecurityContextHolder.getContext().setAuthentication(authentication);
-//                }
-//            }
-//        }
 
         /**
          * 从cookies获取token,客户端每次请求会自动带上带有token的cookies,格式如下
@@ -72,7 +55,9 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
             LOGGER.info("checking username:{}", username);
             if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
                 //根据用户名返回Spring Security 需要的UserDetail
+                int i = 2;
                 UserDetails userDetails = this.userDetailsService.loadUserByUsername(username);
+
                 if (jwtTokenUtil.validateToken(authToken, userDetails)) {
                     // 设置请求的认证信息和权限
                     UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(

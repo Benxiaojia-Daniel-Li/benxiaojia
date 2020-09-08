@@ -24,6 +24,8 @@ public class UmsAdmin implements Serializable {
 
     private Date createTime;
 
+    private Date updateTime;
+
     private Date loginTime;
 
     private static final long serialVersionUID = 1L;

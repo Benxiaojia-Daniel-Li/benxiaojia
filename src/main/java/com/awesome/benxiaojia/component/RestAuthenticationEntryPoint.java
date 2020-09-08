@@ -8,6 +8,7 @@ import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -19,14 +20,20 @@ import java.io.IOException;
 @Component
 public class RestAuthenticationEntryPoint implements AuthenticationEntryPoint {
     @Override
-    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
+    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException  {
 
         if(JudgeIsCellphoneUtil.isCellphoneBrowser(request)){
             response.setCharacterEncoding("UTF-8");
             response.setContentType("application/json");
             response.getWriter().println(JSONUtil.parse(CommonResult.unauthorized(authException.getMessage())));
             response.getWriter().flush();
-        }else {
+        } else {
+
+            //当验证token失败的时候，重定向到登录页面，并重置token
+            Cookie cookie = new Cookie("Bearer", null);
+            cookie.setMaxAge(0);
+            cookie.setPath("/");
+            response.addCookie(cookie);
             response.sendRedirect("/admin/login");
         }
 

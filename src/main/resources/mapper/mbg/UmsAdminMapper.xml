@@ -1,37 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.awesome.benxiaojia.mbg.mapper.UmsAdminMapper">
-  <resultMap id="BaseResultMap" type="com.awesome.benxiaojia.model.UmsAdmin">
-    <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="username" jdbcType="VARCHAR" property="username" />
-    <result column="password" jdbcType="VARCHAR" property="password" />
-    <result column="icon" jdbcType="VARCHAR" property="icon" />
-    <result column="email" jdbcType="VARCHAR" property="email" />
-    <result column="cellphone" jdbcType="VARCHAR" property="cellphone" />
-    <result column="remark" jdbcType="VARCHAR" property="remark" />
-    <result column="status" jdbcType="BIT" property="status" />
-    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
-    <result column="login_time" jdbcType="TIMESTAMP" property="loginTime" />
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.awesome.benxiaojia.mbg.mapper.UmsAdminMapper" >
+  <resultMap id="BaseResultMap" type="com.awesome.benxiaojia.model.UmsAdmin" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="icon" property="icon" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="cellphone" property="cellphone" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="BIT" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="login_time" property="loginTime" jdbcType="TIMESTAMP" />
   </resultMap>
-  <sql id="allColumns">
-    id, username, password, icon, email, cellphone, remark, status, create_time,
-    login_time
-  </sql>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from ums_admin
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.awesome.benxiaojia.model.UmsAdmin">
+  <insert id="insert" parameterType="com.awesome.benxiaojia.model.UmsAdmin" >
     insert into ums_admin (id, username, password,
       icon, email, cellphone,
       remark, status, create_time,
-      login_time)
+      update_time, login_time)
     values (#{id,jdbcType=BIGINT}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
       #{icon,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{cellphone,jdbcType=VARCHAR},
       #{remark,jdbcType=VARCHAR}, #{status,jdbcType=BIT}, #{createTime,jdbcType=TIMESTAMP},
-      #{loginTime,jdbcType=TIMESTAMP})
+      #{updateTime,jdbcType=TIMESTAMP}, #{loginTime,jdbcType=TIMESTAMP})
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.awesome.benxiaojia.model.UmsAdmin">
+  <update id="updateByPrimaryKey" parameterType="com.awesome.benxiaojia.model.UmsAdmin" >
     update ums_admin
     set username = #{username,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
@@ -41,23 +38,24 @@
       remark = #{remark,jdbcType=VARCHAR},
       status = #{status,jdbcType=BIT},
       create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
       login_time = #{loginTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select
-    <include refid="allColumns"/>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select id, username, password, icon, email, cellphone, remark, status, create_time,
+    update_time, login_time
     from ums_admin
     where id = #{id,jdbcType=BIGINT}
   </select>
-  <select id="selectAll" resultMap="BaseResultMap">
-    select
-    <include refid="allColumns"/>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, username, password, icon, email, cellphone, remark, status, create_time,
+    update_time, login_time
     from ums_admin
   </select>
-  <select id="selectByName" parameterType="java.lang.String" resultMap="BaseResultMap">
-    select
-    <include refid="allColumns"/>
+  <select id="selectByName" resultType="com.awesome.benxiaojia.model.UmsAdmin">
+    select id, username, password, icon, email, cellphone, remark, status, create_time,
+    update_time, login_time
     from ums_admin
     where username = #{username,jdbcType=VARCHAR}
   </select>

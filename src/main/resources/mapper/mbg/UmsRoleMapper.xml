@@ -6,6 +6,7 @@
     <result column="role_name" property="roleName" jdbcType="VARCHAR" />
     <result column="description" property="description" jdbcType="VARCHAR" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="DATE" />
     <result column="status" property="status" jdbcType="BIT" />
     <result column="sort" property="sort" jdbcType="INTEGER" />
   </resultMap>
@@ -15,28 +16,29 @@
   </delete>
   <insert id="insert" parameterType="com.awesome.benxiaojia.model.UmsRole" >
     insert into ums_role (id, role_name, description, 
-      create_time, status, sort
-      )
+      create_time, update_time, status, 
+      sort)
     values (#{id,jdbcType=BIGINT}, #{roleName,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, 
-      #{createTime,jdbcType=TIMESTAMP}, #{status,jdbcType=BIT}, #{sort,jdbcType=INTEGER}
-      )
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=DATE}, #{status,jdbcType=BIT}, 
+      #{sort,jdbcType=INTEGER})
   </insert>
   <update id="updateByPrimaryKey" parameterType="com.awesome.benxiaojia.model.UmsRole" >
     update ums_role
     set role_name = #{roleName,jdbcType=VARCHAR},
       description = #{description,jdbcType=VARCHAR},
       create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=DATE},
       status = #{status,jdbcType=BIT},
       sort = #{sort,jdbcType=INTEGER}
     where id = #{id,jdbcType=BIGINT}
   </update>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
-    select id, role_name, description, create_time, status, sort
+    select id, role_name, description, create_time, update_time, status, sort
     from ums_role
     where id = #{id,jdbcType=BIGINT}
   </select>
   <select id="selectAll" resultMap="BaseResultMap" >
-    select id, role_name, description, create_time, status, sort
+    select id, role_name, description, create_time, update_time, status, sort
     from ums_role
   </select>
 </mapper>

@@ -5,7 +5,7 @@ import com.awesome.benxiaojia.component.RestAuthenticationEntryPoint;
 import com.awesome.benxiaojia.component.RestAccessDeniedHandler;
 import com.awesome.benxiaojia.dto.AdminUserDetails;
 import com.awesome.benxiaojia.model.UmsAdmin;
-import com.awesome.benxiaojia.model.UmsPermission;
+import com.awesome.benxiaojia.model.UmsResource;
 import com.awesome.benxiaojia.service.UmsAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -111,8 +111,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return username -> {
             UmsAdmin admin = adminService.getAdminByUsername(username);
             if (admin != null) {
-                List<UmsPermission> permissionList = adminService.getPermissionList(admin.getId());
-                return new AdminUserDetails(admin,permissionList);
+                List<UmsResource> umsResourceList = adminService.getResourceList(admin.getId());
+                return new AdminUserDetails(admin,umsResourceList);
             }
             throw new UsernameNotFoundException("用户名或密码错误");
         };

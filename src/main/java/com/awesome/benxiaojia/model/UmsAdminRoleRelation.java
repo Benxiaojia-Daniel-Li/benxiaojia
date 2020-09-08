@@ -3,6 +3,7 @@ package com.awesome.benxiaojia.model;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Date;
 @Data
 public class UmsAdminRoleRelation implements Serializable {
     private Long id;
@@ -11,7 +12,8 @@ public class UmsAdminRoleRelation implements Serializable {
 
     private Long roleId;
 
-    private static final long serialVersionUID = 1L;
+    private Date createTime;
 
+    private static final long serialVersionUID = 1L;
 
 }

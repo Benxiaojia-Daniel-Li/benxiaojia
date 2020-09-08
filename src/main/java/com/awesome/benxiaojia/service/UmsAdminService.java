@@ -1,7 +1,8 @@
 package com.awesome.benxiaojia.service;
 
 import com.awesome.benxiaojia.model.UmsAdmin;
-import com.awesome.benxiaojia.model.UmsPermission;
+import com.awesome.benxiaojia.model.UmsMenu;
+import com.awesome.benxiaojia.model.UmsResource;
 
 import java.util.List;
 
@@ -32,7 +33,12 @@ public interface UmsAdminService {
     String login(String username, String password);
 
     /**
-     * 获取用户所有权限（包括角色权限和+-权限）
+     * 获取用户所有资源权限
      */
-    List<UmsPermission> getPermissionList(Long adminId);
+    List<UmsResource> getResourceList(Long adminId);
+
+    /**
+     * 获取用户所有的菜单
+     */
+    List<UmsMenu> getMenuList(Long adminId);
 }

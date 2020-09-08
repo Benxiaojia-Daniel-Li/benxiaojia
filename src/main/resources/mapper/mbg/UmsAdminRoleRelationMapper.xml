@@ -5,30 +5,32 @@
     <id column="id" property="id" jdbcType="BIGINT" />
     <result column="admin_id" property="adminId" jdbcType="BIGINT" />
     <result column="role_id" property="roleId" jdbcType="BIGINT" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
   </resultMap>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from ums_admin_role_relation
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.awesome.benxiaojia.model.UmsAdminRoleRelation" >
-    insert into ums_admin_role_relation (id, admin_id, role_id
-      )
-    values (#{id,jdbcType=BIGINT}, #{adminId,jdbcType=BIGINT}, #{roleId,jdbcType=BIGINT}
-      )
+    insert into ums_admin_role_relation (id, admin_id, role_id, 
+      create_time)
+    values (#{id,jdbcType=BIGINT}, #{adminId,jdbcType=BIGINT}, #{roleId,jdbcType=BIGINT}, 
+      #{createTime,jdbcType=TIMESTAMP})
   </insert>
   <update id="updateByPrimaryKey" parameterType="com.awesome.benxiaojia.model.UmsAdminRoleRelation" >
     update ums_admin_role_relation
     set admin_id = #{adminId,jdbcType=BIGINT},
-      role_id = #{roleId,jdbcType=BIGINT}
+      role_id = #{roleId,jdbcType=BIGINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
-    select id, admin_id, role_id
+    select id, admin_id, role_id, create_time
     from ums_admin_role_relation
     where id = #{id,jdbcType=BIGINT}
   </select>
   <select id="selectAll" resultMap="BaseResultMap" >
-    select id, admin_id, role_id
+    select id, admin_id, role_id, create_time
     from ums_admin_role_relation
   </select>
 </mapper>

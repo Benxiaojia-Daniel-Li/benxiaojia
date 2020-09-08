@@ -4,7 +4,8 @@ import com.awesome.benxiaojia.common.utils.JwtTokenUtil;
 import com.awesome.benxiaojia.dao.UmsAdminRoleRelationDao;
 import com.awesome.benxiaojia.mbg.mapper.UmsAdminMapper;
 import com.awesome.benxiaojia.model.UmsAdmin;
-import com.awesome.benxiaojia.model.UmsPermission;
+import com.awesome.benxiaojia.model.UmsMenu;
+import com.awesome.benxiaojia.model.UmsResource;
 import com.awesome.benxiaojia.service.RedisService;
 import com.awesome.benxiaojia.service.UmsAdminService;
 import org.slf4j.Logger;
@@ -12,9 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -94,9 +93,13 @@ public class UmsAdminServiceImpl implements UmsAdminService {
         return token;
     }
 
+    @Override
+    public List<UmsResource> getResourceList(Long adminId){
+        return umsAdminRoleRelationDao.getResourceList(adminId);
+    }
 
     @Override
-    public List<UmsPermission> getPermissionList(Long adminId) {
-        return umsAdminRoleRelationDao.getPermissionList(adminId);
+    public List<UmsMenu> getMenuList(Long adminId){
+        return umsAdminRoleRelationDao.getMenuList(adminId);
     }
 }

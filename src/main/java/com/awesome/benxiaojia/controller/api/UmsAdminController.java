@@ -2,7 +2,7 @@ package com.awesome.benxiaojia.controller.api;
 
 import com.awesome.benxiaojia.common.apihelper.CommonResult;
 import com.awesome.benxiaojia.dto.UmsAdminLoginParam;
-import com.awesome.benxiaojia.model.UmsPermission;
+import com.awesome.benxiaojia.model.UmsResource;
 import com.awesome.benxiaojia.service.UmsAdminService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -49,12 +49,12 @@ public class UmsAdminController {
         return CommonResult.success(tokenMap);
     }
 
-    @ApiOperation("获取用户所有权限")
-    @RequestMapping(value = "/permission/{adminId}", method = RequestMethod.GET)
+    @ApiOperation("获取用户所有资源权限")
+    @RequestMapping(value = "/resource/{adminId}", method = RequestMethod.GET)
     @ResponseBody
-    public CommonResult<List<UmsPermission>> getPermissionList(@PathVariable Long adminId) {
-        List<UmsPermission> permissionList = adminService.getPermissionList(adminId);
-        return CommonResult.success(permissionList);
+    public CommonResult<List<UmsResource>> getResourceList(@PathVariable Long adminId) {
+        List<UmsResource> umsResourceList= adminService.getResourceList(adminId);
+        return CommonResult.success(umsResourceList);
     }
 
 

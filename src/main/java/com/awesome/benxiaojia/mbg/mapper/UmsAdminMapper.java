@@ -15,7 +15,4 @@ public interface UmsAdminMapper {
     int updateByPrimaryKey(UmsAdmin record);
 
     UmsAdmin selectByName(String username);
-
-
-
 }
