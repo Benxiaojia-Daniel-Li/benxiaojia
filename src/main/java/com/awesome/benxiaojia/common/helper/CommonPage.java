@@ -1,4 +1,4 @@
-package com.awesome.benxiaojia.common.apihelper;
+package com.awesome.benxiaojia.common.helper;
 
 import com.github.pagehelper.PageInfo;
 

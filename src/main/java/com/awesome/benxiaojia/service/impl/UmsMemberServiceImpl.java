@@ -1,6 +1,6 @@
 package com.awesome.benxiaojia.service.impl;
 
-import com.awesome.benxiaojia.common.apihelper.CommonResult;
+import com.awesome.benxiaojia.common.helper.CommonResult;
 import com.awesome.benxiaojia.service.RedisService;
 import com.awesome.benxiaojia.service.UmsMemberService;
 import org.springframework.beans.factory.annotation.Autowired;

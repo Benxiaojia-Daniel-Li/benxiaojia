@@ -8,7 +8,7 @@ public interface UmsMenuMapper {
 
     int insert(UmsMenu record);
 
-    UmsMenu selectByPrimaryKey(Long id);
+    List<UmsMenu> selectByPrimaryKey(Long id);
 
     List<UmsMenu> selectAll();
 

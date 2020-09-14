@@ -1,4 +1,4 @@
-package com.awesome.benxiaojia.common.apihelper;
+package com.awesome.benxiaojia.common.helper;
 
 /**
  * 封装API的错误码

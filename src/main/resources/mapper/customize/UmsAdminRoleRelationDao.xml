@@ -15,12 +15,13 @@
 
     <select id="getMenuList" resultMap="com.awesome.benxiaojia.mbg.mapper.UmsMenuMapper.BaseResultMap">
         SELECT
-        p.id, p.parent_id, p.name, p.value, p.icon, p.type, p.url, p.status, p.create_time, p.sort
+        m.id, m.parent_id, m.title, m.name, m.level, m.icon, m.url, m.status, m.create_time, m.update_time,
+        m.sort
         FROM
         ums_admin_role_relation ar
         LEFT JOIN ums_role r ON ar.role_id = r.id
-        LEFT JOIN ums_role_permission_relation rp ON r.id = rp.role_id
-        LEFT JOIN ums_permission p ON rp.permission_id = p.id
+        LEFT JOIN ums_role_menu_relation rm ON rm.role_id = r.id
+        LEFT JOIN ums_menu m ON m.id = rm.menu_id
         WHERE
         ar.admin_id = #{adminId}
     </select>

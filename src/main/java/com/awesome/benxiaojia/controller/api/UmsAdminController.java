@@ -1,6 +1,6 @@
 package com.awesome.benxiaojia.controller.api;
 
-import com.awesome.benxiaojia.common.apihelper.CommonResult;
+import com.awesome.benxiaojia.common.helper.CommonResult;
 import com.awesome.benxiaojia.dto.UmsAdminLoginParam;
 import com.awesome.benxiaojia.model.UmsResource;
 import com.awesome.benxiaojia.service.UmsAdminService;

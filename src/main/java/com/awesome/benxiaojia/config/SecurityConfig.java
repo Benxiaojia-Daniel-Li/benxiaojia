@@ -1,8 +1,8 @@
 package com.awesome.benxiaojia.config;
 
-import com.awesome.benxiaojia.component.JwtAuthenticationTokenFilter;
-import com.awesome.benxiaojia.component.RestAuthenticationEntryPoint;
-import com.awesome.benxiaojia.component.RestAccessDeniedHandler;
+import com.awesome.benxiaojia.security.JwtAuthenticationTokenFilter;
+import com.awesome.benxiaojia.security.RestAuthenticationEntryPoint;
+import com.awesome.benxiaojia.security.RestAccessDeniedHandler;
 import com.awesome.benxiaojia.dto.AdminUserDetails;
 import com.awesome.benxiaojia.model.UmsAdmin;
 import com.awesome.benxiaojia.model.UmsResource;
@@ -57,7 +57,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/**/*.css",
                         "/**/*.js",
                         "/swagger-resources/**",
-                        "/v2/apihelper-docs/**",
+                        "/v2/helper-docs/**",
                         "/v2/init-docs/**",
                         "/v2/**",
                         "/images/**",

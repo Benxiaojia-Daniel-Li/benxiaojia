@@ -1,6 +1,6 @@
 package com.awesome.benxiaojia.service;
 
-import com.awesome.benxiaojia.common.apihelper.CommonResult;
+import com.awesome.benxiaojia.common.helper.CommonResult;
 
 /**
  * 会员管理Service

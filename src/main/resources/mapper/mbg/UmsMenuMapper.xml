@@ -19,13 +19,13 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.awesome.benxiaojia.model.UmsMenu" >
-    insert into ums_menu (id, parent_id, title, 
-      name, level, icon, 
-      url, status, create_time, 
+    insert into ums_menu (id, parent_id, title,
+      name, level, icon,
+      url, status, create_time,
       update_time, sort)
-    values (#{id,jdbcType=BIGINT}, #{parentId,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, 
-      #{name,jdbcType=VARCHAR}, #{level,jdbcType=INTEGER}, #{icon,jdbcType=VARCHAR}, 
-      #{url,jdbcType=VARCHAR}, #{status,jdbcType=BIT}, #{createTime,jdbcType=TIMESTAMP}, 
+    values (#{id,jdbcType=BIGINT}, #{parentId,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR},
+      #{name,jdbcType=VARCHAR}, #{level,jdbcType=INTEGER}, #{icon,jdbcType=VARCHAR},
+      #{url,jdbcType=VARCHAR}, #{status,jdbcType=BIT}, #{createTime,jdbcType=TIMESTAMP},
       #{updateTime,jdbcType=TIMESTAMP}, #{sort,jdbcType=INTEGER})
   </insert>
   <update id="updateByPrimaryKey" parameterType="com.awesome.benxiaojia.model.UmsMenu" >
@@ -43,13 +43,13 @@
     where id = #{id,jdbcType=BIGINT}
   </update>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
-    select id, parent_id, title, name, level, icon, url, status, create_time, update_time, 
+    select id, parent_id, title, name, level, icon, url, status, create_time, update_time,
     sort
     from ums_menu
     where id = #{id,jdbcType=BIGINT}
   </select>
   <select id="selectAll" resultMap="BaseResultMap" >
-    select id, parent_id, title, name, level, icon, url, status, create_time, update_time, 
+    select id, parent_id, title, name, level, icon, url, status, create_time, update_time,
     sort
     from ums_menu
   </select>

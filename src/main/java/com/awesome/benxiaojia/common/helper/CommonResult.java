@@ -1,4 +1,5 @@
-package com.awesome.benxiaojia.common.apihelper;
+package com.awesome.benxiaojia.common.helper;
+
 
 /**
  * 通用返回对象

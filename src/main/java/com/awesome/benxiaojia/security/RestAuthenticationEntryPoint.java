@@ -1,13 +1,12 @@
-package com.awesome.benxiaojia.component;
+package com.awesome.benxiaojia.security;
 
 import cn.hutool.json.JSONUtil;
-import com.awesome.benxiaojia.common.apihelper.CommonResult;
+import com.awesome.benxiaojia.common.helper.CommonResult;
 import com.awesome.benxiaojia.common.utils.JudgeIsCellphoneUtil;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -28,7 +27,6 @@ public class RestAuthenticationEntryPoint implements AuthenticationEntryPoint {
             response.getWriter().println(JSONUtil.parse(CommonResult.unauthorized(authException.getMessage())));
             response.getWriter().flush();
         } else {
-
             //当验证token失败的时候，重定向到登录页面，并重置token
             Cookie cookie = new Cookie("Bearer", null);
             cookie.setMaxAge(0);

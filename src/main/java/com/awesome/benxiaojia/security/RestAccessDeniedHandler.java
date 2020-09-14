@@ -1,7 +1,7 @@
-package com.awesome.benxiaojia.component;
+package com.awesome.benxiaojia.security;
 
 import cn.hutool.json.JSONUtil;
-import com.awesome.benxiaojia.common.apihelper.CommonResult;
+import com.awesome.benxiaojia.common.helper.CommonResult;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
 package com.awesome.benxiaojia.controller.api;
 
-import com.awesome.benxiaojia.common.apihelper.CommonResult;
+import com.awesome.benxiaojia.common.helper.CommonResult;
 import com.awesome.benxiaojia.service.UmsMemberService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

@@ -1,4 +1,4 @@
-package com.awesome.benxiaojia.component;
+package com.awesome.benxiaojia.security;
 
 import com.awesome.benxiaojia.common.utils.JwtTokenUtil;
 import org.slf4j.Logger;
@@ -55,9 +55,7 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
             LOGGER.info("checking username:{}", username);
             if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
                 //根据用户名返回Spring Security 需要的UserDetail
-                int i = 2;
                 UserDetails userDetails = this.userDetailsService.loadUserByUsername(username);
-
                 if (jwtTokenUtil.validateToken(authToken, userDetails)) {
                     // 设置请求的认证信息和权限
                     UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(

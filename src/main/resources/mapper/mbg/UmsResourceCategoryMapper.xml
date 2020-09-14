@@ -12,9 +12,9 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.awesome.benxiaojia.model.UmsResourceCategory" >
-    insert into ums_resource_category (id, create_time, name, 
+    insert into ums_resource_category (id, create_time, name,
       sort)
-    values (#{id,jdbcType=BIGINT}, #{createTime,jdbcType=TIMESTAMP}, #{name,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=BIGINT}, #{createTime,jdbcType=TIMESTAMP}, #{name,jdbcType=VARCHAR},
       #{sort,jdbcType=INTEGER})
   </insert>
   <update id="updateByPrimaryKey" parameterType="com.awesome.benxiaojia.model.UmsResourceCategory" >
@@ -27,7 +27,7 @@
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select id, create_time, name, sort
     from ums_resource_category
-    where id = #{id,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}1
   </select>
   <select id="selectAll" resultMap="BaseResultMap" >
     select id, create_time, name, sort
