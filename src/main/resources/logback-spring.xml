@@ -8,7 +8,9 @@
              <level>ERROR</level>
          </filter>-->
         <encoder>
-            <pattern>%d{HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <!--<pattern>%d{HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n</pattern>-->
+            <pattern>%highlight([%-5level]) %cyan(%d{yyyy-MM-dd#HH:mm:ss.SSS}) %yellow([Thread:%thread]) %magenta([Logger:%logger]) -> (%msg%n)
+            </pattern>
         </encoder>
     </appender>
 
@@ -24,7 +26,7 @@
         </encoder>
     </appender>
 
-    <root level="debug">
+    <root level="info">
         <appender-ref ref="console" />
         <appender-ref ref="file" />
     </root>
