@@ -19,7 +19,7 @@ import java.util.Map;
 
 @Slf4j
 @RunWith(SpringRunner.class)
-@SpringBootTest
+//@SpringBootTest
 class UmsAdminControllerTest {
     @Autowired
     private PasswordEncoder passwordEncoder;
